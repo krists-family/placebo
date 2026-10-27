@@ -1,6 +1,5 @@
 {
-  "framework": null,
-  "buildCommand": "node scripts/run-framework.mjs build",
-  "outputDirectory": "dist",
+  "buildCommand": "npm run build:next",
+  "outputDirectory": ".next",
   "installCommand": "npm install"
 }
