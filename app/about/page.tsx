@@ -1,0 +1,1 @@
+import {About} from '@/components/storefront';import {config} from '@/lib/commerce';export const dynamic='force-dynamic';export const metadata={title:'Our story'};export default async function Page(){return <About config={await config()}/>}

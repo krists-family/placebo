@@ -1,0 +1,1 @@
+import {Inquiry} from '@/components/storefront';import {config} from '@/lib/commerce';export const dynamic='force-dynamic';export const metadata={title:'Get in touch'};export default async function Page(){return <Inquiry config={await config()} team={false}/>}

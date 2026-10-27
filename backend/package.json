@@ -1,0 +1,33 @@
+{
+  "name": "placebo-medusa",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "medusa develop",
+    "build": "medusa build",
+    "start": "medusa start",
+    "db:migrate": "medusa db:migrate",
+    "seed": "medusa exec ./src/scripts/seed.ts",
+    "db:generate": "medusa db:generate"
+  },
+  "dependencies": {
+    "@medusajs/admin-sdk": "2.21.2",
+    "@medusajs/cli": "2.21.2",
+    "@medusajs/framework": "2.21.2",
+    "@medusajs/medusa": "2.21.2",
+    "@medusajs/js-sdk": "2.21.2",
+    "@medusajs/ui": "4.2.6"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "@types/react": "^18.3.0",
+    "typescript": "^5.6.2",
+    "vite": "^6.0.0",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "ts-node": "^10.9.2"
+  },
+  "engines": {
+    "node": ">=22.12.0"
+  }
+}

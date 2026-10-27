@@ -1,0 +1,3 @@
+import { runtime, ShopError } from '@/lib/runtime';
+import { failure } from '@/lib/errors';
+export async function GET(req:Request,{params}:{params:Promise<{key:string[]}>}){try{const {key}=await params;const path=key.join('/');if(!/^products\/[a-f0-9]+\.(png|webp|jpg)$/.test(path))throw new ShopError('Image not found.',404);const e=await runtime();const object=await e.BUCKET?.get(path);if(!object)throw new ShopError('Image not found.',404);return new Response(object.body,{headers:{'Content-Type':object.httpMetadata?.contentType||'image/webp','Cache-Control':'public,max-age=31536000,immutable','X-Content-Type-Options':'nosniff'}});}catch(e){return failure(e);}}

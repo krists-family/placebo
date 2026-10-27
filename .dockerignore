@@ -1,0 +1,10 @@
+node_modules
+backend
+.git
+.env
+.env.*
+.wrangler
+.sites-runtime
+.next
+dist
+*.log

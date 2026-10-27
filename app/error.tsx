@@ -1,0 +1,1 @@
+'use client';export default function Error({reset}:{reset:()=>void}){return <div className="page-wrap"><div className="narrow"><h1 className="display">One little moment.</h1><p>The shop is temporarily unavailable. Please try again shortly.</p><button className="btn" onClick={reset}>Try again</button></div></div>}

@@ -1,0 +1,1 @@
+import Link from '@/components/site-link';export default function Page(){return <div className="page-wrap"><div className="narrow"><a href="/" className="logo">Placebo</a><h1 className="display">A little lost?</h1><p>This page or cap could not be found.</p><Link className="btn" href="/shop">Back to the collection</Link></div></div>}
