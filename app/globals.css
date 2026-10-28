@@ -14,3 +14,6 @@ html{scroll-behavior:smooth;scroll-padding-top:24px}.team-buy{display:flex;justi
 @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;animation:none!important;transition:none!important}}
 .admin-body[data-slot=sidebar-wrapper]{display:grid!important}.admin-sidebar [data-slot=sidebar-menu]{gap:7px}.admin-sidebar [data-slot=sidebar-menu-button]{height:auto}.admin-sidebar [data-slot=sidebar-menu-button]:hover{background:#ede5d1}.admin-sidebar [data-slot=sidebar-menu-button][data-active=true]{background:#f1e1d9;color:var(--red)}.admin-table[data-slot=table]{font-size:14px}
 @media(max-width:760px){.admin-sidebar{width:100%!important}.admin-sidebar [data-slot=sidebar-menu]{flex-direction:row;overflow-x:auto}.admin-sidebar [data-slot=sidebar-menu-item]{flex-shrink:0}.admin-sidebar [data-slot=sidebar-menu-button]{white-space:nowrap}.admin-sidebar [data-slot=sidebar-menu-button] svg{display:none}.admin-sidebar [data-slot=sidebar-menu-button] span{display:block}.admin-main [role=tablist]{max-width:calc(100vw - 32px);overflow-x:auto;justify-content:flex-start}}
+.logo{display:inline-flex;align-items:center}
+.logo img{height:1em;width:auto;max-width:100%;object-fit:contain;display:block}
+@media(max-width:760px){.logo{font-size:36px}}
